@@ -1,0 +1,6 @@
+[submodule "ray-build/ray"]
+	path = ray-build/ray
+	url = https://github.com/zorino/ray.git
+[submodule "ray-build/RayPlatform"]
+	path = ray-build/RayPlatform
+	url = https://github.com/zorino/RayPlatform.git

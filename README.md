@@ -14,6 +14,14 @@ Ray and RayPlatform src (./ray-build/) are linked with :
 ./surveys-fix/		: fix results to compare with
 
 
+
+**To Rebuild Ray**
+```sh
+	$ ./ray-build.sh
+```
+
+
+**To Run a Test**
 ```sh
 	$ ./ray-surveyor-launcher.sh ./surveys-configs/launch-surveyor_1in-1out-filter.sh
 ```

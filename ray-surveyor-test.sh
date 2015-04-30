@@ -14,5 +14,10 @@ then
     exit 0
 fi
 
-./ray-surveyor-launcher.sh $1 $threads
+mpiexec -n $threads ./Ray $1 $threads
 
+out=${1%.conf}
+echo "Let's compare the output for $out\n" 
+
+diff surveys
+# Diff between 

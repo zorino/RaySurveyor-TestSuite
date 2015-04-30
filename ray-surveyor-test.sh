@@ -3,7 +3,7 @@
 if [ -z "$1" ]
 then
     echo "Need a config file !"
-    echo "$ ray-surveyor-launcher.sh <config> [Threads]"
+    echo "$ ray-surveyor-test.sh <config> <output to compare with> [Threads]"
     exit 0
 fi
 
@@ -14,4 +14,5 @@ then
     exit 0
 fi
 
-mpiexec -n $threads ./Ray $1
+./ray-surveyor-launcher.sh $1 $threads
+

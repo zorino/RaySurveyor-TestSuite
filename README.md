@@ -23,6 +23,6 @@ Ray and RayPlatform src (**./ray-build/**) are linked with :
 
 **To Run a Test**
 ```sh
-	$ ./ray-surveyor-launcher.sh ./surveys-configs/launch-surveyor_1in-1out-filter.sh
+	$ ./ray-surveyor-launcher.sh ./surveys-configs/launch-surveyor_1in-1out-filter.conf
 ```
 

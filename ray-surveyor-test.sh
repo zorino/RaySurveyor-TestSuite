@@ -14,10 +14,13 @@ then
     exit 0
 fi
 
-mpiexec -n $threads ./Ray $1 $threads
+out=$(basename ${1%.conf})
 
-out=${1%.conf}
-echo "Let's compare the output for $out\n" 
+mpiexec -n $threads ./Ray $1
 
-diff surveys
-# Diff between 
+echo "Let's compare the output for $out"
+
+# Difference between matrix
+diff surveys-fix/$out/Surveyor/SimilarityMatrix.tsv surveys-results/$out/Surveyor/SimilarityMatrix.tsv
+diff surveys-fix/$out/Surveyor/DistanceMatrix.tsv surveys-results/$out/Surveyor/DistanceMatrix.tsv
+

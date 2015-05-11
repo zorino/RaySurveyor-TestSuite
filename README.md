@@ -14,7 +14,7 @@ Ray and RayPlatform src (**./ray-build/**) are linked with :
 **./surveys-fix/** : fix results to compare with
 
 
-** Clone the repo with submodules**
+**Clone the repo with submodules**
 ```sh
 	$ git clone --recursive https://github.com/zorino/RaySurveyor-TestSuite.git
 ```

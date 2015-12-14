@@ -14,7 +14,7 @@ cd ray-build/
 cd ray/
 make clean
 rm -fr ./BUILD
-make -j 2 PREFIX=`pwd`/BUILD MAXKMERLENGTH=64 HAVE_LIBZ=y HAVE_LIBBZ2=y ASSERT=n
+make -j 3 PREFIX=`pwd`/BUILD MAXKMERLENGTH=128 HAVE_LIBZ=y HAVE_LIBBZ2=y ASSERT=n
 make install
 cd ../
 

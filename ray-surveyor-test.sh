@@ -33,4 +33,3 @@ then
     diff surveys-fix/$out/Surveyor/DistanceMatrix.tsv surveys-results/$out/Surveyor/DistanceMatrix.tsv
     
 fi
-
